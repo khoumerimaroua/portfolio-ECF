@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+/* nav-bar */
+header {
+  height: 60px;
+  background-color: rgb(10, 10, 10) ;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 0px;
+  z-index: 2;
+}
+.site-nav {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-top: 1em;
+  background-color: #0000;
+  clip-path: circle(0px at top right);
+  transition: clip-path ease-in-out 700ms;
+}
+.site-nav-open {
+  clip-path: circle(150% at top right);
+}
+.site-nav ul {
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+.site-nav li {
+  border-bottom: 1px solid #06dce3;
+}
+.site-nav li:last-child {
+  border-bottom: none;
+}
+.site-nav a {
+  background-color: black;
+  color: #ffffff;
+  display: block;
+  padding: 1em 6em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus , .site-nav a :active{
+  color: #d3ba14;
+  text-decoration: underline;
+}
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+.menu-open .hamburger {
+  transform: rotate(45deg);
+}
+.menu-open .hamburger::before {
+  opacity: 0;
+}
+.menu-open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background-color: #06dce3;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+.hamburger::before {
+  transform: translateY(-6px);
+}
+.hamburger::after {
+  transform: translateY(3px);
+}
+/* section */
+
+.section1{
+  background-image: url('images/images\ 2.jpg');
+  min-height: 80vh;
+  background-size: cover;
+  background-position:center ;
+  background-repeat: no-repeat;
+}
+.random-text {
+  color: rgb(234, 202, 21); 
+  text-align: center;
+  padding: 30px;
+  font-size: 2rem;
+  text-shadow:1px 1px 2px rgb(14, 14, 14), 0 0 1em rgb(255, 0, 0), 0 0 0.2em blue ;
+}
+#forme{
+     position:relative;
+     z-index:1;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    background-color: rgba(3, 3, 3, 0.1);
+    text-align: center;
+}
+form{
+    padding: 40px 30px;
+    width: 50%;
+   
+  }
+.form-control{
+  margin-bottom:20px ;
+  padding-bottom:20px ;
+  position:relative;
+}
+
+.form-control input {
+ display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:100%;
+  padding: 10px;
+  font-size:14px;
+  border-radius: 10px;
+}
+
+#city{
+background-color: #07c3ff;
+}
+#temp{
+  background-color: #dae503;
+}
+#humidity{
+  background-color: #575a5b;
+}
+#wind{
+  background-color: #c29d9d;
+}
+.containeri {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  }
+.cole {
+  display: flex;
+  flex-direction:column ;
+ text-align: center;
+  padding: 20px;
+}
+/* background'bulle' */
+#background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 90vh;
+}
+  /* footer */
+  footer {
+    position: relative;
+    z-index: 1;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding:10px;
+  }
+    h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icons i {
+    color: #ffc107;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icons i:hover {
+    color: #1212a2;
+    transform: scale(1.2);
+  }
+  
+@media only screen and (min-width: 900px) {
+  .menu-toggle {
+    display: none;
+  }
+  .site-nav {
+    background-color: black;
+    height: auto;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    clip-path: initial;
+  }
+  .site-nav li {
+    display: inline-block;
+    border: none;
+  }
+  .site-nav a {
+    padding: 0;
+    margin-left: 3em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .section1{
+    height: 98vh;
+  }
+.rowe{
+  width: 100%;
+}
+}
+   
