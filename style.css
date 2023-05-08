@@ -5,114 +5,34 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
-
-
-  /* logo */
+/* header*/
 header {
   display: flex;
   justify-content: center;
   height: 60px;
-  background-color: rgb(10, 10, 10) ;
-   position: relative;
+  background-color: rgb(10, 10, 10);
+  position: relative;
   top: 0px;
   z-index: 2;
-} body{ 
-
-background-image: url('images/images\ 2.jpg');
-background-size: cover;
-background-position:center ;
-background-repeat: no-repeat;}
-/* section */
-  #background{
-    position: fixed;
-    top: 0;
-    left: 0;
-   }
-
-/* menu */
-.flower-container {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-    position: relative;
-   z-index: 1;
-   margin: 35px 0;
-  }
-  
-.petal {
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    border: 5px solid transparent;
-    transform-origin: center center;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .petal1 {
-    transform: rotate(0deg) translateX(60px) rotate(0deg);
-    background-color: #FF6F61;
-  }
-  
-  .petal2 {
-    transform: rotate(120deg) translateX(60px) rotate(0deg);
-    background-color: #6B5B95;
-  }
-  
-  .petal3 {
-    transform: rotate(240deg) translateX(60px) rotate(0deg);
-    background-color: #88B04B;
-  }
-  
-  .petal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   font-weight: bold;
-    text-align: center;
-  }
-  .petal-content a{
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-  }
-  .closed .petal {
-    transform: rotate(0deg) translateX(0px) rotate(0deg);
-  }
-  
-  .opened .petal1 {
-    transform: rotate(-60deg) translateX(60px) rotate(60deg);
-  }
-  
-  .opened .petal2 {
-    transform: rotate(60deg) translateX(60px) rotate(-60deg);
-  }
-  
-  .opened .petal3 {
-    transform: rotate(180deg) translateX(60px) rotate(180deg);
-  }
-  
-  #flower-btn {
-    position: relative;
-    z-index: 2;
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  #flower-btn:hover {
-  background-color: #bac522;
-  color: #000000;
-  transform: scale(1.1);
 }
-
- /* section */
- .main-section {
-  display:flex;
+body {
+  background-image: url('images/images\ 2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* section-1-*/
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.main-section {
+  display: flex;
   flex-direction: column;
 }
+
+/* div 1*/
 .right-content {
   width: 100%;
   padding: 20px;
@@ -124,15 +44,15 @@ background-repeat: no-repeat;}
   font-size: 40px;
   margin-bottom: 20px;
   padding: 10px;
-  color: rgb(234, 202, 21); 
+  color: rgb(234, 202, 21);
   text-align: center;
   padding: 30px;
   font-size: 30px;
-  text-shadow:1px 1px 2px rgb(14, 14, 14), 0 0 1em rgb(255, 0, 0), 0 0 0.2em blue ;
+  text-shadow: 1px 1px 2px rgb(14, 14, 14), 0 0 1em rgb(255, 0, 0),
+    0 0 0.2em blue;
 }
 
 p {
- 
   font-size: 24px;
   max-width: 700px;
   margin: 0 auto 20px;
@@ -148,7 +68,7 @@ p {
 .media a {
   color: black;
   text-decoration: none;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
@@ -162,12 +82,89 @@ p {
   background-color: #dcd212;
   color: #fff;
 }
+/*  div 2 :menu  */
+.flower-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin: 35px 0;
+}
 
+.petal {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  transform-origin: center center;
+  transition: all 0.5s ease-in-out;
+}
+
+.petal1 {
+  transform: rotate(0deg) translateX(60px) rotate(0deg);
+  background-color: #ff6f61;
+}
+
+.petal2 {
+  transform: rotate(120deg) translateX(60px) rotate(0deg);
+  background-color: #6b5b95;
+}
+
+.petal3 {
+  transform: rotate(240deg) translateX(60px) rotate(0deg);
+  background-color: #88b04b;
+}
+
+.petal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-align: center;
+}
+.petal-content a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+.closed .petal {
+  transform: rotate(0deg) translateX(0px) rotate(0deg);
+}
+
+.opened .petal1 {
+  transform: rotate(-60deg) translateX(60px) rotate(60deg);
+}
+
+.opened .petal2 {
+  transform: rotate(60deg) translateX(60px) rotate(-60deg);
+}
+
+.opened .petal3 {
+  transform: rotate(180deg) translateX(60px) rotate(180deg);
+}
+
+#flower-btn {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+#flower-btn:hover {
+  background-color: #bac522;
+  color: #000000;
+  transform: scale(1.1);
+}
 /* footer */
 .containeri {
   padding: 10px;
   width: 100%;
- background-color: black;
+  background-color: black;
   color: white;
   text-align: center;
 }
@@ -175,4 +172,3 @@ p {
 p {
   font-size: 1.2rem;
 }
-

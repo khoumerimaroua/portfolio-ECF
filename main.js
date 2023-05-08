@@ -1,4 +1,4 @@
-// 
+//l'affichage progressif du texte
 var text = "Hello ! je suis Khoumeri Marwa, développeuse Full Stack junior";
 var index = 0;
 
@@ -7,15 +7,15 @@ function typeText() {
     typingDiv.innerHTML = text.substring(0, index) + '<i class="fa-solid fa-hand"></i>';
     index++;
     if (index > text.length) {
-        return; // arrête l'affichage progressif si on a atteint la fin du texte
+        return;
     }
     setTimeout(typeText, 100);
 }
 typeText();
 // background color
 const canvas = document.createElement("canvas");
-canvas.width = window.innerWidth; // 50% de la largeur de la fenêtre
-canvas.height = window.innerHeight * 0.6; // 80% de la hauteur de la fenêtre
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight * 0.6; // 60% de la hauteur de la fenêtre
 document.getElementById("background").appendChild(canvas);
 
 const context = canvas.getContext("2d");
@@ -54,7 +54,7 @@ function draw() {
 
 draw();
 
-// menu
+// La fleur qui s'ouvre quand tu click sur le botton
 const flowerContainer = document.querySelector('.flower-container');
 const flowerBtn = document.querySelector('#flower-btn');
 
