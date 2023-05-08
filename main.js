@@ -1,35 +1,28 @@
-//  menu Hamberg
-function CambiarClase() {
-    let siteNav = document.getElementById('site-nav');
-    siteNav.classList.toggle('site-nav-open');
-    let menuOpen = document.getElementById('menu-toggle');
-    menuOpen.classList.toggle('menu-open');
-}
-var text = "Hello !  je suis Khoumeri Marwa, développeuse  Full Stack junior ";
+// 
+var text = "Hello ! je suis Khoumeri Marwa, développeuse Full Stack junior";
 var index = 0;
 
 function typeText() {
     var typingDiv = document.getElementById("typing-text");
-    typingDiv.innerHTML = text.substring(0, index) + "|";
+    typingDiv.innerHTML = text.substring(0, index) + '<i class="fa-solid fa-hand"></i>';
     index++;
     if (index > text.length) {
         return; // arrête l'affichage progressif si on a atteint la fin du texte
     }
     setTimeout(typeText, 100);
 }
-
 typeText();
-// bullon backgroynd//
+// background color
 const canvas = document.createElement("canvas");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = window.innerWidth; // 50% de la largeur de la fenêtre
+canvas.height = window.innerHeight * 0.6; // 80% de la hauteur de la fenêtre
 document.getElementById("background").appendChild(canvas);
 
 const context = canvas.getContext("2d");
 
 const bubbles = [];
-for (let i = 0; i < 50; i++) {
-    const size = Math.random() * 50 + 10;
+for (let i = 0; i < 40; i++) {
+    const size = Math.random() * 20 + 10;
     bubbles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -61,8 +54,11 @@ function draw() {
 
 draw();
 
+// menu
+const flowerContainer = document.querySelector('.flower-container');
+const flowerBtn = document.querySelector('#flower-btn');
 
-
-
-
+flowerBtn.addEventListener('click', () => {
+    flowerContainer.classList.toggle('opened');
+});
 

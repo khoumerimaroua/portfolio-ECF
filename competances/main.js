@@ -14,8 +14,8 @@ document.getElementById("background").appendChild(canvas);
 const context = canvas.getContext("2d");
 
 const bubbles = [];
-for (let i = 0; i < 50; i++) {
-    const size = Math.random() * 50 + 10;
+for (let i = 0; i < 70; i++) {
+    const size = Math.random() * 20 + 10;
     bubbles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,

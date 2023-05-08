@@ -95,7 +95,7 @@ header {
   color: rgb(234, 202, 21); 
   text-align: center;
   padding: 30px;
-  font-size: 2rem;
+  font-size: 30px;
   text-shadow:1px 1px 2px rgb(14, 14, 14), 0 0 1em rgb(255, 0, 0), 0 0 0.2em blue ;
 }
 #background{
@@ -205,38 +205,32 @@ background-color: aquamarine;
     background-color: #000000;
     color: #fff;
     text-align: center;
-    padding:10px;
+    padding:6px;
   }
-    h3 {
-    font-size: 32px;
+  h3 {
+    font-size: 22px;
     margin-bottom: 20px;
   }
-  
   p {
     font-size: 18px;
     margin-bottom: 20px;
   }
-  
   .social-icons {
     display: flex;
     justify-content: center;
   }
-  
   .social-icons a {
     margin: 0 10px;
   }
-  
   .social-icons i {
     color: #ffc107;
     transition: all 0.3s ease-in-out;
   }
-  
   .social-icons i:hover {
     color: #1212a2;
     transform: scale(1.2);
   }
-  
-@media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 900px) {
     .menu-toggle {
       display: none;
     }
