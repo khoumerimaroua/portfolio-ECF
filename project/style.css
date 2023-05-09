@@ -12,14 +12,14 @@ header {
   display: flex;
   justify-content: space-evenly;
   position: relative;
-  top: 0px;
+  top: 0;
   z-index: 2;
 }
 .site-nav {
   position: absolute;
   right: 0;
   left: 0;
-  margin-top: 1em;
+  margin-top: 16px;
   background-color: #0000;
   clip-path: circle(0px at top right);
   transition: clip-path ease-in-out 700ms;
@@ -42,7 +42,7 @@ header {
   background-color: black;
   color: #ffffff;
   display: block;
-  padding: 1em 6em;
+  padding: 16px 60px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -54,8 +54,8 @@ header {
 .menu-toggle {
   padding: 1em;
   position: absolute;
-  top: 0.5em;
-  right: 0.5em;
+  top: 8px;
+  right:8px;
 }
 .menu-open .hamburger {
   transform: rotate(45deg);
@@ -73,7 +73,7 @@ header {
   display: block;
   background-color: #06dce3;
   height: 3px;
-  width: 1.75em;
+  width: 28px;
   border-radius: 3px;
   transition: all ease-in-out 500ms;
 }
@@ -238,6 +238,6 @@ p {
     }
     .site-nav a {
       padding: 0;
-      margin-left: 3em;
+      margin-left: 30px;
     }
   }

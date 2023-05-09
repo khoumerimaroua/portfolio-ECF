@@ -12,7 +12,7 @@ header {
   height: 60px;
   background-color: rgb(10, 10, 10);
   position: relative;
-  top: 0px;
+  top: 0;
   z-index: 2;
 }
 body {
@@ -49,7 +49,7 @@ body {
   padding: 30px;
   font-size: 30px;
   text-shadow: 1px 1px 2px rgb(14, 14, 14), 0 0 1em rgb(255, 0, 0),
-    0 0 0.2em blue;
+    0 0 0.2px blue;
 }
 
 p {
@@ -170,5 +170,5 @@ p {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 20px;
 }
