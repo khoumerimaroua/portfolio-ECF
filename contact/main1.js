@@ -1,11 +1,11 @@
-//  menu Hamberg
+//  menu hamburger
 function CambiarClase() {
     let siteNav = document.getElementById('site-nav');
     siteNav.classList.toggle('site-nav-open');
     let menuOpen = document.getElementById('menu-toggle');
     menuOpen.classList.toggle('menu-open');
 }
-// bullon background//
+// bulle background//
 const canvas = document.createElement("canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;

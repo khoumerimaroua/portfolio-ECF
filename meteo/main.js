@@ -1,11 +1,11 @@
-//  menu Hamberg
+//  menu hamburger
 function CambiarClase() {
     let siteNav = document.getElementById('site-nav');
     siteNav.classList.toggle('site-nav-open');
     let menuOpen = document.getElementById('menu-toggle');
     menuOpen.classList.toggle('menu-open');
 }
-// bullon backgroynd//
+// bulle background//
 const canvas = document.createElement("canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -64,7 +64,7 @@ let apiCall = function (city) {
 };
 // ecouteur d'evenement
 document.querySelector('#forme').addEventListener('submit', function (e) {
-    e.preventDefault(); // rafraîchissement de la page)
+    e.preventDefault(); // 
     let ville = document.querySelector('#inputCity').value;
     apiCall(ville);
 });

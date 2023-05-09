@@ -35,9 +35,7 @@ header {
 .site-nav li {
   border-bottom: 1px solid #06dce3;
 }
-.site-nav li:last-child {
-  border-bottom: none;
-}
+
 
 .site-nav a {
   background-color: black;

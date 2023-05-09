@@ -21,7 +21,7 @@ header {
   left: 0;
   margin-top: 16px;
   background-color: #0000;
-  clip-path: circle(0px at top right);
+  clip-path: circle(0 at top right);
   transition: clip-path ease-in-out 700ms;
 }
 .site-nav-open {
@@ -35,9 +35,7 @@ header {
 .site-nav li {
   border-bottom: 1px solid #06dce3;
 }
-.site-nav li:last-child {
-  border-bottom: none;
-}
+
 .site-nav a {
   background-color: black;
   color: #ffffff;
@@ -52,7 +50,7 @@ header {
   text-decoration: underline;
 }
 .menu-toggle {
-  padding: 1em;
+  padding: 16px;
   position: absolute;
   top: 8px;
   right:8px;
@@ -108,7 +106,6 @@ header {
 }
 /* carte */
   .container1 {
-   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

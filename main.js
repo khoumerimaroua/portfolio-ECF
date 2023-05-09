@@ -54,7 +54,7 @@ function draw() {
 
 draw();
 
-// La fleur qui s'ouvre quand tu click sur le botton
+// La fleur qui s'ouvre quand tu click sur le bouton
 const flowerContainer = document.querySelector('.flower-container');
 const flowerBtn = document.querySelector('#flower-btn');
 
