@@ -140,32 +140,25 @@ body{
 .form-field textarea{
   height: 200px;}
 
-.form-field small{
-  visibility: hidden;
+  .form-field.error input {
+    border-color: var(--error-color);
 }
-.form-field i{
-  visibility: hidden;
+.form-field.error select {
+  border : 2px solid var(--error-color);
 }
-.form-field input:focus ,.form-field textarea:focus{
-  outline: none;
+
+.form-field.success input {
+    border-color: var(--success-color);
 }
-.form-field.success input{
-border-color: var(--success-color) ;
+.form-field.success select {
+  border : 2px solid var(--success-color);
 }
-.form-field.error input{
-border-color: var(--error-color) ;
-}
-.form-field.success i.fa-circle-check{
-visibility: visible;
-}
-.form-field.success i.fa-circle-exclamation{
-  visibility: visible;
-  }
-  .form-field.error small{
+.form-field small {
     color: var(--error-color);
-    visibility: visible;
-  }
-/* button-form */
+}
+
+
+/* button */
 
 .btn:hover {
     cursor: pointer;
