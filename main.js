@@ -1,5 +1,5 @@
 //l'affichage progressif du texte
-var text = "Hello ! je suis Khoumeri Marwa, développeuse Full Stack junior";
+var text = "Hello ! je suis Khoumeri Marwa, développeuse Full Stack ";
 var index = 0;
 
 function typeText() {

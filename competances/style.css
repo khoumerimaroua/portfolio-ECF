@@ -89,6 +89,7 @@ header {
   background-repeat: no-repeat;
 }
 .random-text{
+  margin-top:-6px;
   color: rgb(234, 202, 21); 
   text-align: center;
   padding: 30px;
@@ -169,6 +170,7 @@ background-color: aquamarine;
   background-color: #fff;
   border-radius: 50%;
   opacity: 0.9;
+  z-index:1;
 }
 .container .drop .content {
   position: absolute;
